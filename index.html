@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Document</title>
+</head>
+
+<body>
+	<div class="content" id="content">
+		<table id="table">
+			<th>Дата</th>
+			<th>Инструмент (ценная бумага)</th>
+			<th>Cтоимость</th>
+			<tr>
+				<td class="date">01.01.2019</td>
+				<td>Газпром </td>
+				<td class="prices">2000</td>
+			</tr>
+			<tr>
+				<td class="date">02.01.2019</td>
+				<td>Автоваз</td>
+				<td class="prices">2500</td>
+			</tr>
+			<tr>
+				<td class="date">05.01.2019</td>
+				<td>Сбербанк</td>
+				<td class="prices">10000</td>
+			</tr>
+			<tr>
+				<td class="date">10.01.2019</td>
+				<td>Газпром</td>
+				<td class="prices">2500</td>
+			</tr>
+			<tr>
+				<td class="date">07.10.2019</td>
+				<td>Автоваз</td>
+				<td class="prices">2100</td>
+			</tr>
+		</table>
+
+		<div style="width:50%">
+			<canvas id="myChart"></canvas>
+		</div>
+	</div>
+
+	<button class="popup_button" id="button">
+		<a href="">
+			Добавить позицию
+		</a>
+	</button>
+
+	<div id="popup" class="popup">
+		<div class="popup_body" id="popup_body">
+			<div class="popup_content">
+				<form action="" method="get" id="form" class="form">
+					<a href="" class="popup_close" id="popup_close"></a>
+					<label for="date">
+						Дата
+					</label>
+					<input type="date" name="date" id="date">
+
+					<label for="instrument">
+						Инструмент (Ценная бумага)
+					</label>
+					<input type="text" name="tool" id="instrument">
+
+					<label for="price">
+						Стоимость
+					</label>
+					<input type="number" name="price" id="price">
+
+					<button class="add_position" id="add_position">
+						Добавить позицию
+					</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<script src="main.js"></script>
+</body>
+
+</html>
